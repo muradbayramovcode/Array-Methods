@@ -10,13 +10,17 @@ body {
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
+}
+.container .main-content {
   margin-top: 3%;
 }
-.container h1 {
+.container .main-content h1 {
   font-family: Poppins;
   text-align: center;
 }
-.container .cards {
+.container .main-content .cards {
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -29,9 +33,35 @@ body {
   width: 90%;
   background-color: rgba(255, 255, 255, 0.4);
 }
-.container .cards .task1,
-.container .cards .task2,
-.container .cards .task3,
-.container .cards .task4 {
+.container .main-content .cards .task1,
+.container .main-content .cards .task2,
+.container .main-content .cards .task3,
+.container .main-content .cards .task4 {
+  font-family: Poppins;
+}
+.container .main-content-2 {
+  margin-top: 3%;
+}
+.container .main-content-2 h1 {
+  font-family: Poppins;
+  text-align: center;
+}
+.container .main-content-2 .cards {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 50px;
+  align-items: flex-start;
+  justify-content: center;
+  border: 2px solid rgb(63, 63, 63);
+  border-radius: 10px;
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.container .main-content-2 .cards .task1,
+.container .main-content-2 .cards .task2,
+.container .main-content-2 .cards .task3,
+.container .main-content-2 .cards .task4 {
   font-family: Poppins;
 }
